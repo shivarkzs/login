@@ -1,12 +1,14 @@
 [Unit]
-Description = login Service
+Description= login.service 
 
 [Service]
-
+User=root
 Environment=USERS_API_ADDRESS=http://user_endpoint:8080
 Environment=AUTH_API_PORT=8080
-ExecStart=/home/ubuntu/login/login
-SyslogIdentifier=login
+ExecStart=/root/go/src/new_go_module_srk/login/login
+Restart=always
+Syslogidentifier=login
 
 [Install]
 WantedBy=multi-user.target
+
