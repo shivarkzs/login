@@ -1,6 +1,6 @@
 pipeline { 
     agent {
-        lable 'NODEJS'
+        label 'NODEJS'
     } 
 
     stages {
