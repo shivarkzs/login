@@ -9,7 +9,7 @@ pipeline {
 
          steps {
              sh '''
-               npm install
+               export GOPATH=/home/ubuntu/go && export GOBIN=$GOPATH/bin && go get && go build
                  '''
          }
 
@@ -17,8 +17,8 @@ pipeline {
      stage('Prepare Artifacts') {
        steps {
          sh '''
-           cd static
-           zip -r login.zip node_modules server.js
+           
+           zip -r login.zip *
            '''
        }
      }
