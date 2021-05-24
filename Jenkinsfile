@@ -10,7 +10,7 @@ pipeline {
          steps {
              sh '''      
            
-               go get -d && go build
+               go get -d 
             
               '''
          }
