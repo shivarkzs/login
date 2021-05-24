@@ -9,7 +9,7 @@ pipeline {
 
          steps {
              sh '''      
-            export GOPATH=/home/ubuntu/go && export GOBIN=$GOPATH/bin && go get && go build
+             go get -d && go build
               '''
          }
      }
