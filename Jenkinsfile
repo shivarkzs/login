@@ -9,7 +9,7 @@
         stage('Download Dependencies') {
             steps {
                 sh '''
-                 export GOPATH=/go && export GOBIN=$GOPATH/bin && go get && go build
+                 go get -d && go build
             '''
             }
         }
