@@ -6,7 +6,7 @@ Description = login Service
 
 Environment=AUTH_API_PORT=8080
 Environment=USERS_API_ADDRESS=http://USER_ENDPOINT:8080
-ExecStart=/login/login
+ExecStart=/home/ubuntu/login/login
 SyslogIdentifier=login
 
 [Install]
